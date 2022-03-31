@@ -1,0 +1,7 @@
+- hosts: dbservers
+
+  tasks:
+  - name: without
+    lineinfile:
+      path: /etc/hosts
+      line: '192.168.4.31 deneme'
